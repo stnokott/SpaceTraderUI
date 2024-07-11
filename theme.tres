@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bg422erotpqlg"]
+
+[ext_resource type="FontFile" uid="uid://ca0735yd1hnlm" path="res://SourceCodePro-Bold.ttf" id="1_gkxl0"]
+[ext_resource type="FontFile" uid="uid://dmj6jftbltmyc" path="res://SourceCodePro-Regular.ttf" id="2_0no2s"]
+
+[resource]
+default_font = ExtResource("2_0no2s")
+LabelBold/base_type = &"Label"
+LabelBold/fonts/font = ExtResource("1_gkxl0")
+LabelLowImportance/base_type = &"Label"
+LabelLowImportance/colors/font_color = Color(0.396889, 0.396889, 0.396889, 1)
