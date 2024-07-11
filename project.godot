@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="SpaceTrader"
+config/name="SpaceTrader (Client)"
 config/version="0.0.1"
-run/main_scene="res://ui.tscn"
+run/main_scene="res://rpc.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=800
 window/size/viewport_height=600
+
+[dotnet]
+
+project/assembly_name="SpaceTrader (Client)"
 
 [editor]
 

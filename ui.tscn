@@ -71,7 +71,7 @@ size_flags_horizontal = 10
 [node name="Username" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxRight"]
 layout_mode = 2
 theme = ExtResource("1_qimqk")
-text = "STNOKOTT"
+text = "<Username>"
 horizontal_alignment = 2
 
 [node name="Credits" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxRight"]
