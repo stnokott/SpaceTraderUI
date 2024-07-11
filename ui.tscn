@@ -1,6 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://di0naa7374upm"]
+[gd_scene load_steps=4 format=3 uid="uid://di0naa7374upm"]
 
 [ext_resource type="Theme" uid="uid://bg422erotpqlg" path="res://theme.tres" id="1_qimqk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qhrqq"]
+font_color = Color(0.8, 1, 0, 1)
 
 [sub_resource type="GDScript" id="GDScript_7n3f6"]
 resource_name = "AppVersion"
@@ -47,17 +50,35 @@ theme_override_constants/margin_bottom = 5
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Header"]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="VBoxContainer/Header/HBoxContainer"]
+[node name="VBoxLeft" type="VBoxContainer" parent="VBoxContainer/Header/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Title" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxLeft"]
 layout_mode = 2
 size_flags_horizontal = 0
 theme_type_variation = &"LabelBold"
 text = "SpaceTrader"
 
-[node name="Username" type="Label" parent="VBoxContainer/Header/HBoxContainer"]
+[node name="NextReset" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxLeft"]
+layout_mode = 2
+text = "Next reset in 01d 23h:59m:59s"
+
+[node name="VBoxRight" type="VBoxContainer" parent="VBoxContainer/Header/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
+
+[node name="Username" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxRight"]
+layout_mode = 2
 theme = ExtResource("1_qimqk")
 text = "STNOKOTT"
+horizontal_alignment = 2
+
+[node name="Credits" type="Label" parent="VBoxContainer/Header/HBoxContainer/VBoxRight"]
+layout_mode = 2
+text = "1,000,000₡"
+label_settings = SubResource("LabelSettings_qhrqq")
+horizontal_alignment = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
